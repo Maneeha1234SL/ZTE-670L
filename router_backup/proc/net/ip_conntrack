@@ -1,0 +1,35 @@
+udp      17 174 src=29.168.103.244 dst=29.255.255.1 sport=5060 dport=5060 src=29.255.255.1 dst=29.168.103.244 sport=5060 dport=5060 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=63827 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=63827 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=59603 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=59603 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50935 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50935 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=57168 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=57168 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=52795 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=52795 [ASSURED] mark=0 use=2
+tcp      6 85 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50496 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50496 [ASSURED] mark=0 use=2
+tcp      6 85 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50497 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50497 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=63879 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=63879 [ASSURED] mark=0 use=2
+unknown  2 573 src=192.168.2.14 dst=224.0.0.1 [UNREPLIED] src=224.0.0.1 dst=192.168.2.14 mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=62083 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=62083 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=59094 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=59094 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=52371 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=52371 [ASSURED] mark=0 use=2
+tcp      6 66 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=63748 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=63748 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=54759 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=54759 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=61149 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=61149 [ASSURED] mark=0 use=2
+tcp      6 299 ESTABLISHED src=192.168.1.2 dst=192.168.1.1 sport=62386 dport=23 src=192.168.1.1 dst=192.168.1.2 sport=23 dport=62386 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=60325 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=60325 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=62262 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=62262 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=57519 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=57519 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50338 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50338 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=59885 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=59885 [ASSURED] mark=0 use=2
+tcp      6 85 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50493 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50493 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=62310 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=62310 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=52231 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=52231 [ASSURED] mark=0 use=2
+tcp      6 85 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50498 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50498 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=64123 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=64123 [ASSURED] mark=0 use=2
+tcp      6 85 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50495 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50495 [ASSURED] mark=0 use=2
+udp      17 23 src=29.168.103.244 dst=29.255.255.242 sport=52685 dport=53 src=29.255.255.242 dst=29.168.103.244 sport=53 dport=52685 mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=61357 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=61357 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50292 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50292 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=53543 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=53543 [ASSURED] mark=0 use=2
+tcp      6 85 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50494 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50494 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=50197 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=50197 [ASSURED] mark=0 use=2
+tcp      6 78 TIME_WAIT src=192.168.1.2 dst=192.168.1.1 sport=60085 dport=80 src=192.168.1.1 dst=192.168.1.2 sport=80 dport=60085 [ASSURED] mark=0 use=2

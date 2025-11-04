@@ -1,0 +1,19 @@
+<script>
+<%
+if env.getenv("CountryCode") == "173" and "2" == env.getenv("Right") then
+%>
+(function(){
+$("[id^='Alias:PolicyRoute']").attr("disabled",true);
+$("[id^='DestInterface']").attr("disabled",true);
+$("[id^='SrcPrefixIP']").attr("disabled",true);
+$("[id^='DestPrefixIP']").attr("disabled",true);
+$("[id^='Protocol']").attr("disabled",true);
+$(".mac").attr("disabled",true);
+$(".instDelete").remove();
+$("[id^='Btn_apply_PolicyRoute']").remove();
+$("[id^='Btn_cancel_PolicyRoute']").remove();
+})();
+<%
+end
+%>
+</script>

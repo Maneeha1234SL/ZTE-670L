@@ -1,0 +1,3 @@
+serinfo:1.0 driver revision:
+0: uart: mmio:0x94404000 irq:19 tx:36344 rx:0 RTS|DTR
+1: uart: mmio:0x94405000 irq:20 tx:0 rx:0

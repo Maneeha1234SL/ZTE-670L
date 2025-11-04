@@ -1,0 +1,616 @@
+<1970-01-01 00:01:05>Td has been set mode<2>
+<1970-01-01 00:01:08>[Telnet Login],IP<192.168.1.102>,Mode<2>.
+cat /proc/csp/softVersion
+cat /proc/csp/hardVersion
+cat /proc/csp/verdate
+upgradetest gdefconf
+redir add
+redir printf
+setmac 2 256
+setmac 2 257
+setmac 2 258
+setmac 2 259
+setmac 2 260
+setmac 2 261
+setmac 2 2176
+setmac 2 2177
+setmac 2 2178
+setmac 2 1537
+setmac 2 1793
+setmac 2 1024
+setmac 2 1296
+setmac 2 1028
+setmac 2 1328
+setmac 2 768
+setmac 2 512
+setmac 2 2054
+setmac 2 2195
+insmod /kmodule/GN25L95.ko
+bobtest iic_set start
+bobtest iic_to_GN25L95
+bobtest table_sel 2
+bobtest read_reg 162 165
+awk {print $5}
+bobtest read_reg 162 168
+awk {print $5}
+awk {print $5}
+bobtest read_reg 162 230
+bobtest read_reg 162 231
+awk {print $5}
+echo 1
+tso on 255
+<2025-11-02 21:55:49>Td has been set mode<2>
+<2025-11-02 21:56:29>[Telnet Login],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 21:56:33>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:22:01>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:23:05>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:23:31>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:24:25>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:25:10>Td has been set mode<2>
+<2025-11-02 22:25:47>[Telnet Login],IP<192.168.1.5>,Mode<2>.
+ifconfig
+nvram show
+cat /proc/version
+cat /etc/version
+ls /etc
+ls /bin
+ls /data
+cat /etc/version
+cat /etc/versioncode
+cat /etc/zte_ver_num
+cat /etc/ver_num_des
+cat /etc/version
+cat /etc/versioncode
+cat /etc/zte_ver_num
+cat /etc/ver_num_des
+clear
+grep ppp
+ps
+cat /proc/net/dev
+route -n
+logcat
+<2025-11-02 22:33:26>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:33:35>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:34:31>Td has been set mode<2>
+<2025-11-02 22:34:36>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:34:47>[Telnet Login],IP<192.168.1.5>,Mode<2>.
+cat /etc/passwd
+cat /etc/shadow
+grep -E SSID|Key|Password|PreSharedKey
+cat /etc/WLANConfiguration.xml
+nano /etc/WLANConfiguration.xml
+vi /etc/WLANConfiguration.xml
+cd /etc/
+ls
+cat /etc/ManagementServer.xml
+cat /etc/ManagementServer.xml
+ps
+grep httpd
+/bin/httpd -p 80 -h /www
+grep -i -E ssid|preSharedKey|PreSharedKey|pass|key|WPA|WEP|psk /etc/WLANConfiguration.xml
+sed -n 1,200p /etc/db_default_SriLanka_cfg.xml
+grep -n -E ssid|username|password|pppoe|acs|tr069|ManagementServer|PreSharedKey|key|apn|auth /etc/db_default_SriLanka_cfg.xml
+true
+xterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256color
+clear
+ls /etc
+grep -E passwd|shadow|account|user|admin
+ls /etc/default
+grep user
+ls /etc/hardcode
+grep -i -E user|admin|password|login /etc/DeviceConfig.xml
+vi /etc/DeviceConfig.xml
+sed -i s/<Password>.*<\/Password>/<Password>NEWPASSWORD<\/Password>/g /etc/DeviceConfig.xml
+passwd
+mount
+grep -E /etc|/data|/mnt|/overlay
+df -h
+mount -o remount,rw /
+passwd
+<2025-11-02 22:45:02>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+grep ^root: /etc/shadow
+grep ^root: /etc/passwd
+ls -l /bin/login /sbin/login /usr/bin/login
+true
+ps
+grep -v grep
+grep -E telnetd|inetd
+true
+which telnetd
+ls -l /bin/telnetd /sbin/telnetd /usr/sbin/telnetd
+true
+killall telnetd
+killall busybox
+busybox telnetd -l /bin/login -p 23
+grep telnetd
+ps
+<2025-11-02 22:48:41>Td has been set mode<2>
+<2025-11-02 22:49:03>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+ls
+opkg update
+<2025-11-02 22:52:13>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<2025-11-02 23:53:15>Td has been set mode<2>
+<2025-11-02 23:53:30>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<2025-11-02 23:53:39>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+ls
+cd /etc/
+ls
+dmesg
+grep sd
+grep sd
+ls /dev
+cp -r /etc /mnt/usb1_1_1/etc_backup
+sync
+ls /mnt/usb1_1_1/etc_backup
+head
+cp -rL /etc /mnt/usb1_1_1/etc_backup
+sync
+cd /mnt/usb1_1_1/
+ls
+cd /etc_backup
+cd /etc_backup/
+cd etc_backup
+ls
+cd /etc/config/
+cd /etc/config/
+cd
+cd /etc/config/
+cd /userconfig
+ls
+cp -rL /userconfig /mnt/usb1_1_1/userconfig_backup
+sync
+cp -rL /hardcode /mnt/usb1_1_1/hardcode_backup
+cp -rL /temp /mnt/usb1_1_1/temp_backup
+sync
+cd /mnt/usb1_1_1
+tar -czvf zte_full_backup.tar.gz etc_backup userconfig_backup
+sync
+ls -lh /mnt/usb1_1_1/zte_full_backup.tar.gz
+cd /etc/
+ls
+grep -A10 omci_ipv4_dhcp_2
+cat /userconfig/db_user_cfg.xml
+grep -i omci /etc/DeviceConfig.xml /etc/DeviceInfo.xml /etc/LANConfigSecurity.xml /etc/LANEthernetInterfaceConfig.xml /etc/Layer3Forwarding.xml /etc/ManagementServer.xml /etc/WANCommonInterfaceConfig.xml /etc/WANDSLInterfaceConfig.xml /etc/WANDSLLinkConfig.xml /etc/WANPPPConnection.xml /etc/WLANConfiguration.xml /etc/db_default_Belarus_cfg.xml /etc/db_default_BoliviaAxs_cfg.xml /etc/db_default_Bolivia_cfg.xml /etc/db_default_BrazilOI_cfg.xml /etc/db_default_Converage_cfg.xml /etc/db_default_EgyptTedata_cfg.xml /etc/db_default_ErTelecom_cfg.xml /etc/db_default_FPT_cfg.xml /etc/db_default_IndiaFastway_cfg.xml /etc/db_default_IndiaGTPL_cfg.xml /etc/db_default_IndiaHathway_cfg.xml /etc/db_default_IndonesiaLinknet_cfg.xml /etc/db_default_Manufacture_cfg.xml /etc/db_default_Megacable_cfg.xml /etc/db_default_Mesh_cfg.xml /etc/db_default_Mnc_cfg.xml /etc/db_default_Multilaser_cfg.xml /etc/db_default_Netlife_cfg.xml /etc/db_default_PhilippinesPLDT_cfg.xml /etc/db_default_Ptcl_cfg.xml /etc/db_default_Rostelecom_cfg.xml /etc/db_default_SriLanka_cfg.xml /etc/db_default_Telkom_cfg.xml /etc/d
+ifconfig
+ip addr show
+ifconfig ppp0
+ip route
+id
+which sh
+which ash
+which bash
+which busybox
+busybox
+grep telnet
+ps
+telnetd -l /bin/sh
+ps
+grep dropbear
+/usr/sbin/dropbear -E -p 22
+/etc/init.d/rcS
+busybox
+<2025-11-03 00:16:53>Td has been set mode<2>
+<2025-11-03 00:17:15>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 00:17:40>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+setmac show
+cd /etc/
+ls
+busybox
+grep -E telnet|nc|tcpsvd
+nc -l -p 2323 -e /bin/sh
+upgradetest help
+upgradetest ldefconf
+grep db_default_
+ls /etc
+ls /etc/db_default_Belarus_cfg.xml /etc/db_default_BoliviaAxs_cfg.xml /etc/db_default_Bolivia_cfg.xml /etc/db_default_BrazilOI_cfg.xml /etc/db_default_Converage_cfg.xml /etc/db_default_EgyptTedata_cfg.xml /etc/db_default_ErTelecom_cfg.xml /etc/db_default_FPT_cfg.xml /etc/db_default_IndiaFastway_cfg.xml /etc/db_default_IndiaGTPL_cfg.xml /etc/db_default_IndiaHathway_cfg.xml /etc/db_default_IndonesiaLinknet_cfg.xml /etc/db_default_Manufacture_cfg.xml /etc/db_default_Megacable_cfg.xml /etc/db_default_Mesh_cfg.xml /etc/db_default_Mnc_cfg.xml /etc/db_default_Multilaser_cfg.xml /etc/db_default_Netlife_cfg.xml /etc/db_default_PhilippinesPLDT_cfg.xml /etc/db_default_Ptcl_cfg.xml /etc/db_default_Rostelecom_cfg.xml /etc/db_default_SriLanka_cfg.xml /etc/db_default_Telkom_cfg.xml /etc/db_default_TotalPlay_cfg.xml /etc/db_default_VNPT_cfg.xml /etc/db_default_Zoomfiber_cfg.xml
+head -n 40 /etc/db_default_SriLanka_cfg.xml
+ls
+upgradetest sdefconf 198
+<1970-01-01 00:01:47>Td has been set mode<2>
+<1970-01-01 00:02:03>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+/etc/
+cd /etc/
+ls
+<1970-01-01 00:04:30>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<1970-01-01 00:06:14>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+upgradetest ldefconf
+grep -i db_default_ /etc/hardcode
+grep -i db_default_ /etc/versioncode
+grep -i db_default_ /etc/hardcodefile
+db_default_SriLanka_cfg.xml
+db_default_VNPT_cfg.xml
+upgradetest showdefconf
+strings /bin/upgradetest
+grep xml
+strings /bin/upgradetest
+grep db_default_
+grep -i db_default_
+<1970-01-01 00:08:23>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<1970-01-01 00:18:51>Td has been set mode<2>
+<1970-01-01 00:19:08>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<1970-01-01 00:19:17>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+setmac 1 1538
+setmac 1 1794
+setmac 1 1793
+setmac 1 1537
+upgradetest sdefconf 198
+reboot
+<1970-01-01 00:03:54>Td has been set mode<2>
+<1970-01-01 00:04:48>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:05:31>Td has been set mode<2>
+<1970-01-01 00:05:40>[Telnet check user failed,Locked!],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:05:40>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:01:22>Td has been set mode<2>
+<1970-01-01 00:01:42>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:01:51>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 01:17:38>Td has been set mode<2>
+<2025-11-03 01:17:54>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls /etc/
+which upgradetest
+ls /bin/upgradetest /usr/bin/upgradetest /sbin/upgradetest
+cd /userconfig/
+ls
+cat /userconfig/regioncode_record
+cat /userconfig/regioncode_record
+/bin/upgradetest sdefconf db_default_SriLanka_cfg.xml
+<1970-01-01 00:02:25>Td has been set mode<2>
+<1970-01-01 00:02:48>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+cat /userconfig/regioncode_record
+cat /userconfig/regioncode_record
+upgradetest sdefconf 198
+<1970-01-01 00:01:07>Td has been set mode<2>
+<1970-01-01 00:01:26>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+cd /etc/
+ls
+upgradetest sdefconf 0
+<2025-11-03 01:37:16>Td has been set mode<2>
+<2025-11-03 01:37:32>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+cd /etc/
+ls
+upgradetest ldefconf
+db_default_SriLanka_cfg.xml
+db_default_VNPT_cfg.xml
+grep -i db_default_ /etc/hardcode
+which upgradetest
+cat /userconfig/regioncode_record
+cat /userconfig/regioncode_record
+cd /userconfig
+ls
+cat /proc/csp/softVersion
+redir printf
+cat /proc/csp/softVersion
+cat /proc/csp/hardVersion
+cat /proc/csp/verdate
+insmod /kmodule/GN25L95.ko
+<2025-11-03 01:49:14>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 01:52:13>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+upgradetest getver
+cat /etc/init.d/regioncode
+cat /etc/init.d/regioncode
+upgradetest sdefconf 48
+<2025-11-03 01:59:33>Td has been set mode<2>
+<2025-11-03 02:00:09>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB p TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB save
+sendcmd cspd..DB p MgtServer
+sendcmd cspd..DB p
+sendcmd cspd..DB p Bridge
+sendcmd cspd..DB p EthVlan
+<2025-11-03 02:12:17>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 02:13:46>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 02:15:59>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 02:16:03>[Telnet Login],IP<192.168.1.2>,Mode<0>.
+ls
+cd /userconfig/cfg/
+ls
+sendcmd cspd..DB p all
+sendcmd cspd..DB p
+cat /userconfig/cfg/db_user_cfg.xml
+<2025-11-03 02:18:05>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 02:18:16>[Telnet Login],IP<192.168.1.2>,Mode<0>.
+grep -a INDIVKEY
+cat /userconfig/cfg/db_user_cfg.xml
+cat /var/log/messages
+cat /flash/data/factory/*
+ls /mnt/
+cd /userconfig/cfg/
+ls
+grep TelnetCfg db_user_cfg.xml
+grep -a INDIVKEY /userconfig/cfg/db_user_cfg.xml
+sendcmd cspd..DB p MultiCastGlobalConf
+sendcmd cspd..DB p MultiCastMvlanConf
+sendcmd cspd..DB p MultiCastPortConf
+sendcmd cspd..DB p MultiCastSpecialGroup
+sendcmd cspd..DB p VLAN
+sendcmd cspd..DB p VLANDEF
+cd
+<2025-11-03 02:38:31>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 02:38:50>Td has been set mode<2>
+<2025-11-03 02:39:34>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 02:39:45>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 02:40:01>[Telnet check user failed,Locked!],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 02:40:01>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 02:40:07>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:00:55>[Telnet Login],IP<192.168.1.2>,Mode<0>.
+ls
+<2025-11-03 02:44:50>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 02:50:36>Td has been set mode<2>
+<2025-11-03 02:51:11>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+Check firmware version
+Check firmware version
+Check firmware version
+upgradetest getver
+sendcmd cspd..DB all
+ls
+cd /root/
+ls
+wget http://192.168.1.1/usb1_1_1/E15M3IMS.112/ptbl_mips
+ls
+cd /tmp/
+ls
+wget http://192.168.1.1/usb1_1_1/E15M3IMS.112/ptbl_mips
+ls
+cp -rL /mnt/usb1_1_1/E15M3IMS.112/ptbl_mips /tmp/
+ls
+cd /tmp/
+ls
+chmod 775 ptbl_mips
+./ptbl_mips
+./ptbl_mips
+./ptbl_mips
+ls
+rm -r ptbl_mips
+ls
+cp -rL /mnt/usb1_1_1/E15M3IMS.112/ptbl /tmp/
+chmod 775 ptbl
+./ptbl
+rm -r ptbl
+ls
+sendcmd cspd..DB decry /userconfig/cfg/db_user_cfg.xml
+ls
+sendcmd cspd..DB decry /userconfig/cfg/db_user_cfg.xml
+<2025-11-03 03:14:24>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 03:14:37>Td has been set mode<2>
+<2025-11-03 03:17:19>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sidbg 1 DB decry /userconfig/cfg/db_user_cfg.xml
+cd
+cd /root/
+ls
+sendcmd cspd..DB decry /userconfig/cfg/db_user_cfg.xml
+/tmp/debug-decry-cfg
+sidbg 1 DB p all
+sendcmd cspd..DB decry
+switchtst -w
+switchtst -w
+sendcmd cspd..DB p TelnetCfg
+<2025-11-03 03:29:12>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:14:53>Td has been set mode<2>
+<2025-11-03 04:15:10>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:20:10>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:27:03>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+cd /etc/hardcodefile/
+ls
+<2025-11-03 04:32:16>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:38:10>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+<2025-11-03 04:40:25>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:40:42>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:41:29>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 04:41:45>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+mkdir -p /mnt/usb1_1_1/router_back
+cp -aL /home /mnt/usb1_1_1/router_back
+cp -aL /sbin /mnt/usb1_1_1/router_back
+cp -aL /bin /mnt/usb1_1_1/router_back
+cp -aL /init /mnt/usb1_1_1/router_back
+cp -aL /userconfig /mnt/usb1_1_1/router_back
+cp -aL /dev /mnt/usb1_1_1/router_back
+cp -aL /proc /mnt/usb1_1_1/router_back
+<2025-11-03 04:48:14>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls /tagparam
+ls /paramtag
+ls /paramtag
+ls /paramtag
+cat /tagparam/cspd
+cat /tagparam/location
+cd /tagparam/
+ls
+cp -aL /tagparam /mnt/usb1_1_1/router_back
+ls -l /mnt/usb1_1_1/router_back/tagparam
+cp -rL /tagparam /mnt/usb1_1_1/router_back/
+<2025-11-03 04:51:16>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+cp -r /tagparam /mnt/usb1_1_1/router_back/
+cd /mnt/usb1_1_1/router_back/
+ls
+cd tagparam
+ls
+cd
+cp -rL /tagparam /mnt/usb1_1_1/router_back/
+find / -name cspd
+/tagparam/cspd
+find / -type f -iname *cspd*
+find /tagparam -iname *cspd*
+grep -r cspd /tagparam
+<2025-11-03 05:03:39>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 05:12:43>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 11:48:21>Td has been set mode<2>
+<2025-11-03 11:48:56>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+cp -rL mnt/usb1_1_1/userconfig_backup/ /userconfig
+reboot
+<2025-11-03 11:54:02>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 11:54:08>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 11:55:07>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 11:57:31>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 11:57:31>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 11:58:00>Td has been set mode<2>
+<2025-11-03 11:58:14>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB p UserInfo
+sendcmd cspd..DB p UserInfo
+sendcmd cspd..DB p
+sendcmd cspd..DB p TR069Info
+sendcmd cspd..DB p TR069Alias
+sendcmd cspd..DB p TR069InformParm
+sendcmd cspd..DB p TelnetCfg
+sendcmd cspd..DB p Router
+sendcmd cspd..DB p PortBinding
+sendcmd cspd..DB p PortControl
+sendcmd cspd..DB p ParamInfo
+sendcmd cspd..DB p PortLocate
+sendcmd cspd..DB p MultiCastGlobalConf
+sendcmd cspd..DB p MultiCastMvlanConf
+sendcmd cspd..DB p PortBinding
+sendcmd cspd..DB p WANC
+sendcmd cspd..DB p WANCD
+sendcmd cspd..DB p WANDCommCfg
+sendcmd cspd..DB p VoIPVMediaCfg
+sendcmd cspd..DB p VoIPVPCodec
+<2025-11-03 12:15:51>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 12:16:16>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB p PortBinding
+<2025-11-03 12:21:21>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 12:22:45>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB set PortBinding 2 LANViewName DEV.BRIDGING.BR1.BRPORT1,DEV.BRIDGING.BR1.BRPORT8,DEV.BRIDGING.BR1.BRPORT12
+sendcmd cspd..DB set PortBinding 0 LANViewName DEV.BRIDGING.BR1.BRPORT1,DEV.BRIDGING.BR1.BRPORT3
+sendcmd cspd..DB set PortBinding 2 LANViewName DEV.BRIDGING.BR1.BRPORT1,DEV.BRIDGING.BR1.BRPORT8,DEV.BRIDGING.BR1.BRPORT12
+sendcmd cspd..DB add MultiCastMvlanConf
+sendcmd cspd..DB set MultiCastMvlanConf 2 ViewName DEV.MCPORT1.MCMVLAN1
+sendcmd cspd..DB set MultiCastMvlanConf 2 PortViewName DEV.ETH.IF1
+sendcmd cspd..DB set MultiCastMvlanConf 2 MultSrcVid 50
+sendcmd cspd..DB set MultiCastMvlanConf 2 MultDstVid 0
+sendcmd cspd..DB set MultiCastMvlanConf 2 MediumFlg 0
+sendcmd cspd..DB save
+restart
+sendcmd cspd..DB set MultiCastGlobalConf 0 Status 0
+sendcmd cspd..DB set MultiCastGlobalConf 0 Status 1
+reboot
+<1970-01-01 00:02:34>Td has been set mode<2>
+<1970-01-01 00:03:18>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:03:37>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+cp -rL mnt/usb1_1_1/userconfig_backup/ /userconfig
+sendcmd cspd..DB save
+reboot
+<2025-11-03 12:35:10>Td has been set mode<2>
+<2025-11-03 12:35:53>[Telnet check user failed,Locked!],IP<192.168.1.2>,Mode<0>.
+<2025-11-03 12:35:53>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 12:36:06>Td has been set mode<2>
+<2025-11-03 12:36:19>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 12:37:22>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-03 12:45:45>Td has been set mode<2>
+<2025-11-03 12:46:04>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+upgradetest getver
+cat /etc/init.d/regioncode
+upgradetest sdefconf 198
+<1970-01-01 00:05:50>Td has been set mode<2>
+<1970-01-01 00:06:12>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+cd usr
+ls
+cd /root/
+ls
+setmac show2
+reboot
+<2025-11-03 14:17:19>Td has been set mode<2>
+<2025-11-03 14:17:53>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+/cd userconfig
+cd /userconfig/
+ls
+setmac show2
+<2025-11-03 14:23:32>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:04:09>Td has been set mode<2>
+<1970-01-01 00:04:30>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+show vlan
+show interface
+show iptv
+<1970-01-01 00:09:44>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:38:25>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<1970-01-01 00:39:42>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<1970-01-01 00:42:40>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<1970-01-01 01:17:59>Td has been set mode<2>
+<1970-01-01 01:44:07>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<1970-01-01 01:44:19>[Telnet Login],IP<192.168.1.2>,Mode<0>.
+ls
+<1970-01-01 01:49:34>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<1970-01-01 00:23:29>Td has been set mode<2>
+<1970-01-01 00:23:56>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB p TelnetCfg
+sendcmd cspd..DB p TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+<1970-01-01 00:25:17>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:01:30>Td has been set mode<2>
+<1970-01-01 00:01:51>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB p TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB set TelnetCfg
+sendcmd cspd..DB save
+reboot
+<1970-01-01 00:01:03>Td has been set mode<2>
+<1970-01-01 00:01:15>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+cat /etc/init.d/regioncode
+upgradetest sdefconf 198
+<1970-01-01 00:08:24>Td has been set mode<2>
+<1970-01-01 00:08:36>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+setmac show2
+<1970-01-01 00:13:42>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<1970-01-01 00:22:03>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+sendcmd cspd..DB rreset
+<1970-01-01 00:09:10>Td has been set mode<2>
+<1970-01-01 00:09:20>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+cd waln
+cd /wlan/
+ls
+<1970-01-01 00:17:02>[Telnet Logout],IP<192.168.1.2>,Mode<2>.
+<2025-11-04 03:26:42>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:26:51>[Telnet Login],IP<192.168.1.2>,Mode<0>.
+ls
+<2025-11-04 03:30:48>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:30:56>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:31:27>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:35:34>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:37:30>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:39:56>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:40:42>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:41:16>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:44:05>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:44:44>[Telnet Login],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:47:17>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:47:36>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 03:47:47>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 04:01:24>[Telnet Logout],IP<192.168.1.2>,Mode<0>.
+<2025-11-04 17:34:34>[Telnet Logout],IP<192.168.1.3>,Mode<0>.
+<2025-11-04 17:34:57>[Telnet Logout],IP<192.168.1.3>,Mode<0>.
+<2025-11-04 17:34:57>[Telnet Logout],IP<192.168.1.3>,Mode<0>.
+<2025-11-04 17:35:18>[Telnet Logout],IP<192.168.1.3>,Mode<0>.
+<2025-11-04 17:35:18>[Telnet Logout],IP<192.168.1.3>,Mode<0>.
+<2025-11-04 17:36:25>[Telnet Login],IP<192.168.1.3>,Mode<0>.
+ls
+cd /proc/sys/net/ipv6/conf/
+ls
+cd /proc/
+ls
+cd /root/
+ls
+ls
+cd
+<1970-01-01 00:00:58>Td has been set mode<2>
+<1970-01-01 00:01:15>[Telnet Login],IP<192.168.1.2>,Mode<2>.
+ls
+cp -rL /home /mnt/usb1_1_1/router_backup
+cp -rL /sbin /mnt/usb1_1_1/router_backup
+cp -rL /bin /mnt/usb1_1_1/router_backup
+cp -rL /init /mnt/usb1_1_1/router_backup
+cp -rL /userconfig /mnt/usb1_1_1/router_backup

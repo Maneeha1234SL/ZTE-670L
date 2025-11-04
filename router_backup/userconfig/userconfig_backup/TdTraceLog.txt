@@ -1,0 +1,160 @@
+<1970-01-01 00:01:05>Td has been set mode<2>
+<1970-01-01 00:01:08>[Telnet Login],IP<192.168.1.102>,Mode<2>.
+cat /proc/csp/softVersion
+cat /proc/csp/hardVersion
+cat /proc/csp/verdate
+upgradetest gdefconf
+redir add
+redir printf
+setmac 2 256
+setmac 2 257
+setmac 2 258
+setmac 2 259
+setmac 2 260
+setmac 2 261
+setmac 2 2176
+setmac 2 2177
+setmac 2 2178
+setmac 2 1537
+setmac 2 1793
+setmac 2 1024
+setmac 2 1296
+setmac 2 1028
+setmac 2 1328
+setmac 2 768
+setmac 2 512
+setmac 2 2054
+setmac 2 2195
+insmod /kmodule/GN25L95.ko
+bobtest iic_set start
+bobtest iic_to_GN25L95
+bobtest table_sel 2
+bobtest read_reg 162 165
+awk {print $5}
+bobtest read_reg 162 168
+awk {print $5}
+awk {print $5}
+bobtest read_reg 162 230
+bobtest read_reg 162 231
+awk {print $5}
+echo 1
+tso on 255
+<2025-11-02 21:55:49>Td has been set mode<2>
+<2025-11-02 21:56:29>[Telnet Login],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 21:56:33>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:22:01>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:23:05>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:23:31>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:24:25>[Telnet Logout],IP<192.168.1.5>,Mode<0>.
+<2025-11-02 22:25:10>Td has been set mode<2>
+<2025-11-02 22:25:47>[Telnet Login],IP<192.168.1.5>,Mode<2>.
+ifconfig
+nvram show
+cat /proc/version
+cat /etc/version
+ls /etc
+ls /bin
+ls /data
+cat /etc/version
+cat /etc/versioncode
+cat /etc/zte_ver_num
+cat /etc/ver_num_des
+cat /etc/version
+cat /etc/versioncode
+cat /etc/zte_ver_num
+cat /etc/ver_num_des
+clear
+grep ppp
+ps
+cat /proc/net/dev
+route -n
+logcat
+<2025-11-02 22:33:26>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:33:35>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:34:31>Td has been set mode<2>
+<2025-11-02 22:34:36>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+<2025-11-02 22:34:47>[Telnet Login],IP<192.168.1.5>,Mode<2>.
+cat /etc/passwd
+cat /etc/shadow
+grep -E SSID|Key|Password|PreSharedKey
+cat /etc/WLANConfiguration.xml
+nano /etc/WLANConfiguration.xml
+vi /etc/WLANConfiguration.xml
+cd /etc/
+ls
+cat /etc/ManagementServer.xml
+cat /etc/ManagementServer.xml
+ps
+grep httpd
+/bin/httpd -p 80 -h /www
+grep -i -E ssid|preSharedKey|PreSharedKey|pass|key|WPA|WEP|psk /etc/WLANConfiguration.xml
+sed -n 1,200p /etc/db_default_SriLanka_cfg.xml
+grep -n -E ssid|username|password|pppoe|acs|tr069|ManagementServer|PreSharedKey|key|apn|auth /etc/db_default_SriLanka_cfg.xml
+true
+xterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256color
+clear
+ls /etc
+grep -E passwd|shadow|account|user|admin
+ls /etc/default
+grep user
+ls /etc/hardcode
+grep -i -E user|admin|password|login /etc/DeviceConfig.xml
+vi /etc/DeviceConfig.xml
+sed -i s/<Password>.*<\/Password>/<Password>NEWPASSWORD<\/Password>/g /etc/DeviceConfig.xml
+passwd
+mount
+grep -E /etc|/data|/mnt|/overlay
+df -h
+mount -o remount,rw /
+passwd
+<2025-11-02 22:45:02>[Telnet Logout],IP<192.168.1.5>,Mode<2>.
+grep ^root: /etc/shadow
+grep ^root: /etc/passwd
+ls -l /bin/login /sbin/login /usr/bin/login
+true
+ps
+grep -v grep
+grep -E telnetd|inetd
+true
+which telnetd
+ls -l /bin/telnetd /sbin/telnetd /usr/sbin/telnetd
+true
+killall telnetd
+killall busybox
+busybox telnetd -l /bin/login -p 23
+grep telnetd
+ps
+<2025-11-02 22:48:41>Td has been set mode<2>
+<2025-11-02 22:49:03>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+ls
+opkg update
+<2025-11-02 22:52:13>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<2025-11-02 23:53:15>Td has been set mode<2>
+<2025-11-02 23:53:30>[Telnet Logout],IP<192.168.1.3>,Mode<2>.
+<2025-11-02 23:53:39>[Telnet Login],IP<192.168.1.3>,Mode<2>.
+ls
+cd /etc/
+ls
+dmesg
+grep sd
+grep sd
+ls /dev
+cp -r /etc /mnt/usb1_1_1/etc_backup
+sync
+ls /mnt/usb1_1_1/etc_backup
+head
+cp -rL /etc /mnt/usb1_1_1/etc_backup
+sync
+cd /mnt/usb1_1_1/
+ls
+cd /etc_backup
+cd /etc_backup/
+cd etc_backup
+ls
+cd /etc/config/
+cd /etc/config/
+cd
+cd /etc/config/
+cd /userconfig
+ls
+cp -rL /userconfig /mnt/usb1_1_1/userconfig_backup
