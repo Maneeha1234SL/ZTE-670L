@@ -1,0 +1,76 @@
+python decoder1.py config/config.bin config/config.xml
+python decoder2.py config/config.bin config/config.xml
+python decoder3.py config/config.bin config/config.xml
+python decoder1.py --model "F670L" config/config.bin config/config.xml
+python decoder2.py --model "F670L" config/config.bin config/config.xml
+python decoder3.py --model "F670L" config/config.bin config/config.xml
+python decoder1.py --serial ZTE123456789 config/config.bin config/config.xml
+python decoder2.py --serial ZTE123456789 config/config.bin config/config.xml
+python decoder3.py --serial ZTE123456789 config/config.bin config/config.xml
+python decoder1.py --mac AA:BB:CC:DD:EE:FF --serial ZTE123456789 config/config.bin config/config.xml
+python decoder2.py --mac AA:BB:CC:DD:EE:FF --serial ZTE123456789 config/config.bin config/config.xml
+python decoder3.py --mac AA:BB:CC:DD:EE:FF --serial ZTE123456789 config/config.bin config/config.xml
+
+
+
+
+python3 decoder1.py --model "F670L" config/config.bin config/config.xml
+
+python3 decoder1.py --mac 94:98:69:9b:f2:4a --serial ZTEGD024FE40 config/config.bin config/config.xml
+
+
+
+root@ip-172-26-2-131:~/indihome-router-decoder# python3 decoder1.py --mac 94:98:69:9b:f2:4a --serial ZTEGD024FE40 config/config.bin config/config.xml
+Tanda Tangan Yang Terdeteksi: F670L
+Tipe Payload Yang Terdeteksi: 6
+Panjang Nomor Seri: 12
+MAC: 4af29b699894 Kunci_Awal: D024FE404af29b699894, Iv_Awal: ZTE%FN$GponNJ025
+Memiliki Payload Yang Dapat Didekripsi
+Berhasil Didekode!
+root@ip-172-26-2-131:~/indihome-router-decoder#
+
+
+
+
+
+python encoder1.py --key 'isi_key' --signature 'F670L' --include-header config/config.xml config/new.config.bin
+python encoder1.py --key 'isi_key' --signature 'F670L' --version 1 --include-header config/config.xml config/new.config.bin
+python encoder1.py --signature F670L --payload-type 6 config/config.xml config/new.config.bin 
+python encoder1.py --model "F670L" config/config.xml config/new.config.bin
+python encoder1.py --serial ZTE123456789 --signature 'F670L' config/config.xml config/new.config.bin
+python encoder1.py --signature 'F670L' --use-signature-encryption config/config.xml config/new.config.bin
+
+
+python3 encoder1.py --key 'D024FE404af29b699894' --signature 'F670L' --include-header config/config.xml config/new.config.bin
+
+
+python3 encoder1.py --serial ZTEGD024FE40 --signature 'F670L' config/config.xml config/new1.config.bin
+
+
+python3 encoder1.py --signature F670L --payload-type 6 config/config.xml config/new3.config.bin 
+
+cd /root/indihome-router-decoder/
+
+root@ip-172-26-2-131:~/indihome-router-decoder# python3 encoder1.py --signature F670L --payload-type 6 config/config.xml config/new3.config.bin
+Peringatan: Tidak ada kunci yang diberikan!
+Selesai!
+root@ip-172-26-2-131:~/indihome-router-decoder#
+
+
+
+root@ip-172-26-2-131:~/indihome-router-decoder# python3 decoder1.py --mac 94:98
+Tanda Tangan Yang Terdeteksi: F670L
+Tipe Payload Yang Terdeteksi: 6
+Panjang Nomor Seri: 12
+MAC: 4af29b699894 Kunci_Awal: D024FE404af29b699894, Iv_Awal: ZTE%FN$GponNJ025
+Memiliki Payload Yang Dapat Didekripsi
+Berhasil Didekode!
+
+
+config1
+
+
+python3 encoder1.py --signature F670L --payload-type 6 config/config1.xml config/new5.config.bin
+
+
+python3 encoder1.py --signature F670L --payload-type 6 config/config1.xml config/new6.config.bin
