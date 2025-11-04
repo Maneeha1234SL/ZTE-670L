@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# insmod BSP driver module
+/sbin/insmod /kmodule/shellproc.ko
+/sbin/insmod /kmodule/patch.ko
+/sbin/insmod /kmodule/bspdriver.ko

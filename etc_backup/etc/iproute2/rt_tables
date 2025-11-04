@@ -1,0 +1,5 @@
+1 table.csp_lan
+10 table.DEV.IP.IF1
+11 table.DEV.IP.IF2
+12 table.DEV.IP.IF3
+13 table.DEV.IP.IF4

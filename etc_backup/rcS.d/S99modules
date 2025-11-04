@@ -1,0 +1,71 @@
+#!/bin/sh
+# add user-defined startup scripts here
+/sbin/insmod /kmodule/plat-zxylzb_9128S.ko
+# optical
+/sbin/insmod /kmodule/optical.ko
+
+#usb redir driver
+/sbin/insmod  /kmodule/redirusb.ko
+
+# reg
+/sbin/insmod /kmodule/zx_ponreg.ko
+
+#/sbin/insmod /kmodule/tagparam_mod.ko
+
+
+test -e /kmodule/peripheral.ko  && insmod /kmodule/peripheral.ko
+
+# tm sdk
+/sbin/insmod /kmodule/tm.ko
+
+/sbin/insmod  /kmodule/GN25L95.ko
+rmmod GN25L95
+
+ifconfig pon up
+ifconfig omci up
+# ethdrv
+#chizi for ethdrv
+#/sbin/insmod /kmodule/netdriver.ko
+ifconfig sw up
+
+# switch 
+/sbin/insmod /kmodule/switch.ko
+
+# xgponmac sdk
+#/sbin/insmod /kmodule/zte_xgpon.ko
+
+# gponmac sdk
+/sbin/insmod /kmodule/zte_gpon.ko
+
+# gpondrv
+/sbin/insmod /kmodule/gpondrv.ko
+
+#zte_xgmii
+/sbin/insmod /kmodule/zte_xgmii.ko
+
+
+# DSP driver
+#/sbin/insmod /kmodule/kudp.ko
+#/sbin/insmod /kmodule/voip_codec.ko
+#/sbin/insmod /kmodule/dsp_dev.ko
+
+POTS=`grep 'pots' /proc/capability/portinfo | sed -e 's/pots *: *//g'`
+if [ "$POTS" != "0" ];then
+    /sbin/insmod /kmodule/tdm.ko
+    /sbin/insmod /kmodule/kudp.ko
+    /sbin/insmod /kmodule/voip_codec.ko
+    /sbin/insmod /kmodule/dsp_dev.ko
+fi
+
+ifconfig idm0 up
+ifconfig idm1 up
+
+#ptp driver
+#/sbin/insmod  /kmodule/ptpdrv.ko
+
+
+#usb redir driver
+
+
+#/sbin/insmod  /kmodule/y1731drv.ko
+
